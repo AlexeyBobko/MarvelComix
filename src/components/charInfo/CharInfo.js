@@ -25,6 +25,11 @@ class CharInfo extends Component {
 
     }
 
+    componentDidCatch(err, info) {
+        console.log(err, info);
+        this.setState({error: true});
+    }
+
     updateChar = () => {
         const {charId} = this.props;
         if(!charId) {
@@ -35,6 +40,8 @@ class CharInfo extends Component {
             .getCharacter(charId)
             .then(this.onCharLoaded)
             .catch(this.onError)
+        
+        this.foo.bar = 0;
     }
 
     onCharLoaded = (char) => {
