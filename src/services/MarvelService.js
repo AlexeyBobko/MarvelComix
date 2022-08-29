@@ -1,9 +1,8 @@
-
 class MarvelService {
-
+    
     _apiBase = 'https://gateway.marvel.com:443/v1/public/';
     
-    _apiKey = 'apikey=4f56c29c2b404c4714b7e7213928f2bc';
+    _apiKey = 'apikey=84d25e60d6f1d66a3507e7883f88d6a6';
 
     getResource = async (url) => {
         let res = await fetch(url);
@@ -17,7 +16,7 @@ class MarvelService {
 
     getAllCharacters = async () => {
         const res = await this.getResource(`${this._apiBase}characters?limit=9&offset=210&${this._apiKey}`);
-        return res.data.results.map(this._transformCharacter)
+        return res.data.results.map(this._transformCharacter);
     }
 
     getCharacter = async (id) => {
@@ -27,17 +26,15 @@ class MarvelService {
 
     _transformCharacter = (char) => {
         return {
+            id: char.id,
             name: char.name,
-            description: char.description ? `${char.description.slice(0, 200)}...` : 'There is no description for this character',
-            thumbnail: `${char.thumbnail.path}.${char.thumbnail.extension}`,
+            description: char.description ? `${char.description.slice(0, 210)}...` : 'There is no description for this character',
+            thumbnail: char.thumbnail.path + '.' + char.thumbnail.extension,
             homepage: char.urls[0].url,
-            wiki: char.urls[1].url
+            wiki: char.urls[1].url,
+            comics: char.comics.items
         }
     }
 }
 
 export default MarvelService;
-//здесь нужно указать num т.к. нужен аргумент
-const numbers = [1, 4, 9];
-const doubles = numbers.map((num) => num * 2);
-// теперь doubles равен [2, 8, 18], а numbers всё ещё равен [1, 4, 9]
