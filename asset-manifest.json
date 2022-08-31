@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/AlexeyBobko/static/css/main.0a07339c.chunk.css",
+    "main.js": "/AlexeyBobko/static/js/main.00bba1d8.chunk.js",
+    "main.js.map": "/AlexeyBobko/static/js/main.00bba1d8.chunk.js.map",
+    "runtime-main.js": "/AlexeyBobko/static/js/runtime-main.f1712e69.js",
+    "runtime-main.js.map": "/AlexeyBobko/static/js/runtime-main.f1712e69.js.map",
+    "static/js/2.85391ee7.chunk.js": "/AlexeyBobko/static/js/2.85391ee7.chunk.js",
+    "static/js/2.85391ee7.chunk.js.map": "/AlexeyBobko/static/js/2.85391ee7.chunk.js.map",
+    "index.html": "/AlexeyBobko/index.html",
+    "static/css/main.0a07339c.chunk.css.map": "/AlexeyBobko/static/css/main.0a07339c.chunk.css.map",
+    "static/js/2.85391ee7.chunk.js.LICENSE.txt": "/AlexeyBobko/static/js/2.85391ee7.chunk.js.LICENSE.txt",
+    "static/media/error.42292aa1.gif": "/AlexeyBobko/static/media/error.42292aa1.gif",
+    "static/media/mjolnir.61f31e18.png": "/AlexeyBobko/static/media/mjolnir.61f31e18.png",
+    "static/media/vision.067d4ae1.png": "/AlexeyBobko/static/media/vision.067d4ae1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f1712e69.js",
+    "static/js/2.85391ee7.chunk.js",
+    "static/css/main.0a07339c.chunk.css",
+    "static/js/main.00bba1d8.chunk.js"
+  ]
+}
